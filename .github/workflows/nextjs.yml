@@ -64,6 +64,7 @@ jobs:
       - name: Restore cache
         uses: actions/cache@v4
         with:
+          # build时会构建出.next/cache
           path: |
             .next/cache
           # Generate a new cache whenever packages or source files change.
